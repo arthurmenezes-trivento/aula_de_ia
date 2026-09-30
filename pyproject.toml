@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.11.9"
 dependencies = [
+    "matplotlib>=3.11.2",
     "ollama>=0.6.3",
 ]
 
