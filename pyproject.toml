@@ -1,0 +1,27 @@
+[project]
+name = "aula-de-ia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arthurmenezes-trivento", email = "arthurmadeira@triventoeducacao.com.br" }
+]
+requires-python = ">=3.11.9"
+dependencies = [
+    "ollama>=0.6.3",
+]
+
+[project.scripts]
+aula-de-ia = "aula_de_ia:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "requests>=2.34.2",
+]
